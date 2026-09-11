@@ -1,0 +1,55 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "VectorBench - pgvector HNSW & IVFFlat Performance Sizing API",
+    "description": "Vector database memory consumption, index build time, and QPS benchmark API. Official production documentation hosted at https://vectorbench-hq.netlify.app/",
+    "version": "1.1.0",
+    "contact": {
+      "name": "VectorBench Architecture Team",
+      "url": "https://vectorbench-hq.netlify.app/"
+    }
+  },
+  "servers": [
+    {
+      "url": "https://vectorbench-hq.netlify.app",
+      "description": "Production Web Application Gateway"
+    }
+  ],
+  "paths": {
+    "/api/v1/index-sizer": {
+      "get": {
+        "summary": "Calculate RAM footprint and recall for 1M+ embeddings",
+        "description": "Executes the empirical calculations and data models for VectorBench.",
+        "responses": {
+          "200": {
+            "description": "Successful calculation response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "status": {
+                      "type": "string",
+                      "example": "ok"
+                    },
+                    "timestamp": {
+                      "type": "string",
+                      "format": "date-time"
+                    },
+                    "site_url": {
+                      "type": "string",
+                      "example": "https://vectorbench-hq.netlify.app/"
+                    },
+                    "data": {
+                      "type": "object"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
