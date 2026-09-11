@@ -15,3 +15,13 @@ Empirical QPS, Recall@10, and RAM consumption benchmarks across pgvector, Qdrant
 
 ---
 Maintained by [VectorBench](https://vectorbench-hq.netlify.app/).
+
+## 📚 In-Depth Technical Implementation Guides
+
+| Target Engineering Query | Production Reference & Guide URL |
+| :--- | :--- |
+| **Qdrant Vs Pinecone Benchmark** | [https://vectorbench-hq.netlify.app/qdrant-vs-pinecone-benchmark-2026/](https://vectorbench-hq.netlify.app/qdrant-vs-pinecone-benchmark-2026/) |
+| **Pgvector Production Tuning Hnsw** | [https://vectorbench-hq.netlify.app/pgvector-production-tuning-guide/](https://vectorbench-hq.netlify.app/pgvector-production-tuning-guide/) |
+| **Hnsw Vs Ivfflat Memory Consumption Pgvector** | [https://vectorbench-hq.netlify.app/hnsw-vs-ivfflat-pgvector/](https://vectorbench-hq.netlify.app/hnsw-vs-ivfflat-pgvector/) |
+| **Cohere Embed V3 Vs Text-Embedding-3-Large Cost** | [https://vectorbench-hq.netlify.app/cohere-vs-openai-embeddings/](https://vectorbench-hq.netlify.app/cohere-vs-openai-embeddings/) |
+
